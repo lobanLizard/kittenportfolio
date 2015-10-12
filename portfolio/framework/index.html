@@ -5,16 +5,20 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Kitten Portfolio</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
 	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 </head>
 <body>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6">
-				<img src="images/my_avatar.png" alt="Lobal avatar pic" width="100">
+				<img class="title-logo" src="images/my_avatar.png" alt="Lobal avatar pic" width="100">
 			</div>
 			<div class="col-md-6 text-right text-uppercase">
-				<h1>Loban Lizard</h1>
+				<h1 class="title-super text-thin">Loban Lizard</h1>
 				<h3>Aspiring to be a Web Devloper</h3>
 			</div>
 		</div>
@@ -25,29 +29,105 @@
 		</div>
 		<div class="row">
 			<div class="col-md-12">
-				<img class="img-responsive" src="http://placekitten.com/1140/350" alt="main cat pic">
+				<img class="img-responsive" src="http://placekitten.com/1140/350" alt="main cat pic" data-toggle="modal" data-target="#cat1">
 			</div>
 		</div>
 		<div class="row text-uppercase">
 			<div class="col-md-12">
-				<h2>Featured Work</h2>
+				<h2 class="text-muted">Featured Work</h2>
 			</div>
 		</div>
-		<div class="row text-uppercase"">
+		<div class="row text-uppercase text-center">
 			<div class="col-md-4">
-				<img class="img-responsive" src="http://placekitten.com/320/350" alt="second cat pic">
+				<img class="img-responsive" src="http://placekitten.com/320/350" alt="second cat pic" data-toggle="modal" data-target="#cat2">
 				<p>Winter sports</p>
 			</div>
 			<div class="col-md-4">
-				<img class="img-responsive" src="http://placekitten.com/960/480" alt="third cat pic">
+				<img class="img-responsive" src="http://placekitten.com/960/480" alt="third cat pic" data-toggle="modal" data-target="#cat3">
 				<p>Hypnosis</p>
 			</div>
 			<div class="col-md-4">
-				<img class="img-responsive" src="http://placekitten.com/300/220" alt="fourth cat pic">
+				<img class="img-responsive" src="http://placekitten.com/300/220" alt="fourth cat pic" data-toggle="modal" data-target="#cat4">
 				<p>Rock Climbing</p>
 			</div>
 		</div>
 
 	</div>
+	<!-- Modal -->
+<div class="modal fade" id="cat1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Kitty Profile Page</h4>
+      </div>
+      <div class="modal-body">
+        <img class="img-responsive" src="http://placekitten.com/1140/350">
+        This was my first project in this class. I learned a lot about HTML and CSS.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="cat2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Winter Cat</h4>
+      </div>
+      <div class="modal-body">
+        <img class="img-responsive" src="http://placekitten.com/320/350">
+        It is fun to go out and play in the snow sometimes.
+        Snow is white and wet and cold.  
+        After playing in snow, love to have a hot chocolate.
+        Not sure if cats should be drinking hot chocolate, though.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="cat3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Hypnosis</h4>
+      </div>
+      <div class="modal-body">
+        <img class="img-responsive" src="http://placekitten.com/960/480">
+        Sometimes we use a coin to hypnotize people.
+        Other times we use a cat toy.
+        We always make sure to ask the patient
+        to come back to a reality with a keyword
+        "nyan".
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="cat4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Rock Climbing</h4>
+      </div>
+      <div class="modal-body">
+        <img class="img-responsive" src="http://placekitten.com/300/220">
+        Some cats are so small and they think you are
+        a mountain.  Cats will have a fun time 
+        climbing you.  Cats might use their claws and
+        teeth to climb, but don't get bitten by cats.
+        Cats mouths have lots bacteria!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>
